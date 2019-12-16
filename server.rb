@@ -1,4 +1,5 @@
 require 'sinatra'
+require ''
 require './bakeryItems.rb'
 
 get '/' do
@@ -37,4 +38,20 @@ end
 
 get '/home' do
   erb :home
+end
+
+get '/recipe' do
+  # form with erb or html
+end
+
+post '/recipe' do
+  # take the form input
+  # make api call with httparty and pass in form input
+  
+
+  req = HTTParty.get('https://api.spoonacular.com/recipes/random',{query:
+  apiKey :ENV['RANDOM_RECIPE']
+})
+  # parse the response from api
+  # pass the parsed response into an erb
 end
