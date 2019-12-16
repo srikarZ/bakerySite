@@ -9,7 +9,7 @@
 
   <nav id="navbar">
     <div class="nav-wrapper">
-      <a href="home.erb" class="Srikar's-Bakery"><big>Srikar's Bakery</big></a>
+      <a href="home.erb" class="Srikar's-Bakery" id="srikar"><big>Srikar's Bakery</big></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="/home"><big>Home</big></a></li>
         <li><a href="/cakes"><big>Cakes</big></a></li>
@@ -29,8 +29,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Yogurt Muffin</strong></span>
-          <p></p>
-          <p>Price: </p>
+          <p><strong>Description:</strong> <%= @yogurtMuffin.description%> </p>
+          <p><strong>Price:</strong> <%= @yogurtMuffin.price%></p>
       </div>
     </div>
   </div>
@@ -44,8 +44,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Chocolate Muffin</strong></span>
-          <p></p>
-          <p>Price: </p>
+          <p><strong>Description:</strong> <%= @chocolateMuffin.description%> </p>
+          <p><strong>Price:</strong> <%= @chocolateMuffin.price%></p>
       </div>
     </div>
   </div>
@@ -59,9 +59,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Corn Muffin</strong></span>
-          <p></p>
-          <p>Price: </p>
-      </div>
+          <p><strong>Description:</strong> <%= @cornMuffin.description%> </p>
+          <p><strong>Price:</strong> <%= @cornMuffin.price%></p>      </div>
     </div>
   </div>
 </div>
@@ -74,8 +73,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Blueberry Muffin</strong></span>
-          <p></p>
-          <p>Price: </p>
+          <p><strong>Description:</strong> <%= @blueberryMuffin.description%> </p>
+          <p><strong>Price:</strong> <%= @blueberryMuffin.price%></p>
       </div>
     </div>
   </div>
@@ -89,8 +88,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Cinnamon Muffin</strong></span>
-          <p></p>
-          <p>Price: </p>
+          <p><strong>Description:</strong> <%= @cinnamonMuffin.description%> </p>
+          <p><strong>Price:</strong> <%= @cinnamonMuffin.price%></p>
       </div>
     </div>
   </div>
@@ -104,8 +103,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Mango Muffin</strong></span>
-          <p></p>
-          <p>Price: </p>
+          <p><strong>Description:</strong> <%= @mangoMuffin.description%> </p>
+          <p><strong>Price:</strong> <%= @mangoMuffin.price%></p>
       </div>
     </div>
   </div>

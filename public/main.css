@@ -1,7 +1,19 @@
+#srikar{
+    padding:30px;
+}
+
+#navbar{
+    background-color: chocolate;
+}
 
 .grid{
     display: grid; 
     grid-template: auto auto/ auto auto auto;
     padding: 60px;
-    grid-column-gap: 10px ;
+    grid-gap: 20px ;
+}
+
+.row img{
+    width: 200px;
+    height: 200px;
 }

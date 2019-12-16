@@ -2,14 +2,15 @@
   <head>
     <meta charset="utf-8">
     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="/main.css">
+   
   </head>
   <body>
 
   <nav id="navbar">
     <div class="nav-wrapper">
-      <a href="home.erb" class="Srikar's-Bakery"><big>Srikar's Bakery</big></a>
+      <a href="home.erb" class="Srikar's-Bakery" id="srikar"><big>Srikar's Bakery</big></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="/home"><big>Home</big></a></li>
         <li><a href="/cakes"><big>Cakes</big></a></li>
@@ -29,8 +30,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>NewYork Cheesecake</strong></span>
-          <p><%= cheeseCake.description %></p>
-          <p>Price: <%= cheeseCake.price %> </p>
+          <p><strong>Description:</strong> <%= @cheeseCake.description %></p>
+          <p><strong>Price</strong>: <%= @cheeseCake.price %> </p>
       </div>
     </div>
   </div>
@@ -44,8 +45,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Lemon Cake</strong></span>
-          <p></p>
-          <p>Price: </p>
+          <p><strong>Description:</strong> <%= @lemonCake.description%> </p>
+          <p><strong>Price:</strong> <%= @lemonCake.price%></p>
       </div>
     </div>
   </div>
@@ -59,9 +60,9 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Carrot Cake</strong></span>
-          <p></p>
-          <p>Price: </p>
-      </div>
+          <p><strong>Description:</strong> <%= @carrotCake.description%> </p>
+          <p><strong>Price:</strong> <%= @carrotCake.price%></p>      
+        </div>
     </div>
   </div>
 </div>
@@ -74,8 +75,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Red Velvet</strong></span>
-          <p></p>
-          <p>Price: </p>
+          <p><strong>Description:</strong> <%= @redVelvet.description%> </p>
+          <p><strong>Price:</strong> <%= @redVelvet.price%></p>
       </div>
     </div>
   </div>
@@ -89,8 +90,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Marble Cake</strong></span>
-          <p></p>
-          <p>Price: </p>
+          <p><strong>Description:</strong> <%= @marbleCake.description%> </p>
+          <p><strong>Price:</strong> <%= @marbleCake.price%></p>
       </div>
     </div>
   </div>
@@ -104,8 +105,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>ChocolateMousse Cake</strong></span>
-          <p></p>
-          <p>Price: </p>
+          <p><strong>Description:</strong> <%= @chocolateMousse.description%> </p>
+          <p><strong>Price:</strong> <%= @chocolateMousse.price%></p>
       </div>
     </div>
   </div>

@@ -9,7 +9,7 @@
 
   <nav id="navbar">
     <div class="nav-wrapper">
-      <a href="home.erb" class="Srikar's-Bakery"><big>Srikar's Bakery</big></a>
+      <a href="home.erb" class="Srikar's-Bakery" id="srikar"><big>Srikar's Bakery</big></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="/home"><big>Home</big></a></li>
         <li><a href="/cakes"><big>Cakes</big></a></li>
@@ -29,8 +29,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Peanut Butter</strong></span>
-          <p><%= %></p>
-          <p>Price: <%= %> </p>
+          <p><strong>Description:</strong> <%= @peanutButterCookie.description%></p>
+          <p><strong>Price:</strong> <%= @peanutButterCookie.price%></p>
       </div>
     </div>
   </div>
@@ -44,8 +44,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Chocolate Chip</strong></span>
-          <p><%= %></p>
-          <p>Price: </p>
+          <p><strong>Description:</strong> <%= @chocolateChipCookie.description%> </p>
+          <p><strong>Price:</strong> <%= @chocolateChipCookie.price%></p>
       </div>
     </div>
   </div>
@@ -59,8 +59,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Butter Cookie</strong></span>
-          <p><%= %></p>
-          <p>Price: </p>
+          <p><strong>Description:</strong> <%= @butterCookie.description%> </p>
+          <p><strong>Price:</strong> <%= @butterCookie.price%></p>
       </div>
     </div>
   </div>
@@ -74,8 +74,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Coconut Cookie</strong></span>
-          <p><%= %></p>
-          <p>Price: </p>
+          <p><strong>Description:</strong> <%= @coconutCookie.description%> </p>
+          <p><strong>Price:</strong> <%= @coconutCookie.price%></p>
       </div>
     </div>
   </div>
@@ -89,8 +89,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Vanilla Cookie</strong></span>
-          <p><%= %></p>
-          <p>Price: </p>
+          <p><strong>Description:</strong> <%= @vanillaCookie.description%> </p>
+          <p><strong>Price:</strong> <%= @vanillaCookie.price%></p>
       </div>
     </div>
   </div>
@@ -104,8 +104,8 @@
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Short Bread</strong></span>
-          <p><%= %></p>
-          <p>Price: </p>
+          <p><strong>Description:</strong> <%= @shortBreadCookie.description%> </p>
+          <p><strong>Price:</strong> <%= @shortBreadCookie.price%></p>
       </div>
     </div>
   </div>
