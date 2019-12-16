@@ -1,4 +1,5 @@
 require 'sinatra'
+require './bakeryItems.rb'
 
 get '/' do
   erb :home
