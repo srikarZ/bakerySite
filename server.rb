@@ -1,21 +1,21 @@
 require 'sinatra'
 
 get '/' do
-  erb :layout
+  erb :home
 end
 
-get '/cookies.erb' do
+get '/cookies' do
   erb :cookies
 end
 
-get '/cakes.erb' do
+get '/cakes' do
   erb :cakes
 end
 
-get '/muffins.erb' do
+get '/muffins' do
   erb :muffins
 end
 
-get '/layout.erb' do
-  erb :layout
+get '/home' do
+  erb :home
 end
