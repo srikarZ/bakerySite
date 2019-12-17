@@ -1,0 +1,36 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   
+  </head>
+  <body>
+
+<nav id="navbar">
+    <div class="nav-wrapper">
+      <a href="home.erb" class="Srikar's-Bakery" id="srikar"><big>Srikar's Bakery</big></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/home"><big>Home</big></a></li>
+        <li><a href="/cakes"><big>Cakes</big></a></li>
+        <li><a href="/cookies"><big>Cookies</big></a></li>
+        <li><a href="/muffins"><big>Muffins</big></a></li>
+        <li><a href="/recipe"><big>Random Recipe</big></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div>
+    <h5><%= @data["recipes"][0]["title"]%></h5>
+  </div>
+
+  <div>
+    <p><big><%= @data["recipes"][0]["instructions"]%></big></p>
+  </div>
+
+<script type="text/javascript" src="/main.js"></script>
+      <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+   </body>
+</html>
